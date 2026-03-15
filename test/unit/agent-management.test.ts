@@ -36,7 +36,7 @@ describe("agent management config parsing", () => {
 
 	it("surfaces JSON parse errors for update config strings", () => {
 		const result = handleUpdate(
-			{ agent: "reviewer", config: '{"description":' },
+			{ agent: "delegate", config: '{"description":' },
 			{ cwd: tempDir, modelRegistry: { getAvailable: () => [] } },
 		);
 
